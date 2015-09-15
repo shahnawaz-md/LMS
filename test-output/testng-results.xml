@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="49286" started-at="2015-08-28T11:23:40Z" finished-at="2015-08-28T11:24:29Z">
+  <suite name="Default suite" duration-ms="45977" started-at="2015-09-15T13:13:11Z" finished-at="2015-09-15T13:13:57Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="49286" started-at="2015-08-28T11:23:40Z" finished-at="2015-08-28T11:24:29Z">
+    <test name="Default test" duration-ms="45977" started-at="2015-09-15T13:13:11Z" finished-at="2015-09-15T13:13:57Z">
       <class name="com.ubique.lms.LMS">
-        <test-method status="PASS" signature="browser()[pri:0, instance:com.ubique.lms.LMS@cfed7c]" name="browser" is-config="true" duration-ms="9277" started-at="2015-08-28T16:53:40Z" finished-at="2015-08-28T16:53:49Z">
+        <test-method status="PASS" signature="browser()[pri:0, instance:com.ubique.lms.LMS@251241f5]" name="browser" is-config="true" duration-ms="8535" started-at="2015-09-15T18:43:11Z" finished-at="2015-09-15T18:43:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browser -->
-        <test-method status="PASS" signature="PortalLMS()[pri:0, instance:com.ubique.lms.LMS@cfed7c]" name="PortalLMS" duration-ms="38184" started-at="2015-08-28T16:53:49Z" finished-at="2015-08-28T16:54:27Z">
+        <test-method status="PASS" signature="PortalLMS()[pri:0, instance:com.ubique.lms.LMS@251241f5]" name="PortalLMS" duration-ms="34829" started-at="2015-09-15T18:43:20Z" finished-at="2015-09-15T18:43:54Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- PortalLMS -->
-        <test-method status="PASS" signature="close()[pri:0, instance:com.ubique.lms.LMS@cfed7c]" name="close" is-config="true" duration-ms="1813" started-at="2015-08-28T16:54:27Z" finished-at="2015-08-28T16:54:29Z">
+        <test-method status="PASS" signature="close()[pri:0, instance:com.ubique.lms.LMS@251241f5]" name="close" is-config="true" duration-ms="2602" started-at="2015-09-15T18:43:54Z" finished-at="2015-09-15T18:43:57Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- close -->

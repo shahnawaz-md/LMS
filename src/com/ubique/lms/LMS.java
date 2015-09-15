@@ -2,18 +2,27 @@ package com.ubique.lms;
 
 import java.util.concurrent.TimeUnit;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
+import PageFactory.Home_Page;
+import PageFactory.LoginPage;
+import PageFactory.MyTimesheet;
+import PageFactory.Signin_Page;
+
 public class LMS {
 	
-	static WebDriver driver;
+	WebDriver driver;
 	private static final long TIMEOUT = 12000;
+	
+	Signin_Page objSignin;
+	LoginPage objLogin;
+	Home_Page objHomepage;
+	MyTimesheet objMyTimesheet;
+	
 	
 	@BeforeClass
 	
@@ -34,39 +43,26 @@ public class LMS {
 	}
 	
 	@Test
+	public void PortalLMS() throws InterruptedException {
 	
-	public static void PortalLMS() throws InterruptedException {
+		objSignin = new Signin_Page(driver);
+		objSignin.signinToPortal();
 		
-		/*WebElement signin = driver.findElement(By.xpath(".//*[@id='sign-in']"));
-		signin.click();
-		Thread.sleep(TIMEOUT);
-		WebElement email = driver.findElement(By.id("_58_login"));
-		email.clear();
-		email.sendKeys("shahnawaz@ubiquesystems.co.in");
-		WebElement password = driver.findElement(By.id("_58_password"));
-		password.clear();
-		password.sendKeys("bismillah786");
-		WebElement signin_button = driver.findElement(By.xpath(".//*[@id='_58_fm']/div/button"));
-		signin_button.click();
-		Thread.sleep(TIMEOUT);
-		WebElement my_name = driver.findElement(By.xpath(".//*[@id='_145_userAvatar']/a/span"));
-		my_name.click();
-		WebElement signOut = driver.findElement(By.xpath(".//*[@id='_145_userAvatar']/ul/li[2]/a/span"));
-		signOut.click();
-		Thread.sleep(TIMEOUT);
+		objLogin = new LoginPage(driver);
+		objLogin.loginToPortal("shahnawaz@ubiquesystems.co.in", "bismillah786");
+		
+		objHomepage = new Home_Page(driver);
+		objHomepage.eventsOnHomePage();
+		
+		
+		/*objMyTimesheet = new MyTimesheet(driver);
+		objMyTimesheet.eventsOnTimesheetpage();
 		*/
 		
-		/*signin.click();
-		Thread.sleep(TIMEOUT);
-		email.clear();
-		email.sendKeys("shahnawaz@ubiquesystems.co.in");
-		password.clear();
-		password.sendKeys("bismillah786");
-		signin_button.click();
-		Thread.sleep(TIMEOUT);
-		my_name.click();
-		signOut.click();
-		Thread.sleep(TIMEOUT);*/
+		
+		
+		
+		
 		
 		
 		
